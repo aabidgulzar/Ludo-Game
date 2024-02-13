@@ -1,0 +1,493 @@
+body {
+    height: 90vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: 'Courier New', Courier, monospace;
+    min-width: 800px;
+  }
+  
+  .player1 .blue{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: 3rem;
+  margin-top: 3rem;
+  width: 100px;
+  height: 100px;
+  background-color: white;
+  border: 20px solid rgb(40, 194, 255);
+}
+
+.player1 .blue .p{
+    margin: .5rem;
+    border: 1px solid black;
+    border-radius: 500px;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(40, 194, 255);
+}
+
+.player1 .bluepathway{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-left: 3rem;
+    width: 140px;
+    height: 81px;
+}
+
+.player1 .bluepathway .steps {
+    margin: 0;
+   border: 1px solid black;
+   width: 21.3px;
+   height: 25px;
+}
+.player1 .e{
+    background-color: rgb(40, 194, 255);
+}
+
+
+
+
+.player2{
+    display: flex;
+}
+
+
+.player2 .yellow{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 3rem;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 20px solid rgb(255, 230, 0);
+  }
+  
+  .player2 .yellow .p{
+      margin: .5rem;
+      border: 1px solid black;
+      border-radius: 500px;
+      width: 30px;
+      height: 30px;
+      background-color: rgb(255, 230, 0);
+  }
+  
+  .player2 .bluepathway{
+    transform: rotate(270deg) translateX(-30px) translateY(-30px);
+      display: flex;
+      flex-wrap: wrap;
+      width: 140px;
+      height: 81px;
+  }
+  
+  .player2 .bluepathway .steps {
+      margin: 0;
+     border: 1px solid black;
+     width: 21.3px;
+     height: 25px;
+  }
+  .player2 .e{
+      background-color: rgb(255, 230, 0);
+  }
+
+
+
+
+  .player3{
+    position: fixed;
+    top: 269px;
+    left: 220px;
+}
+
+
+.player3 .green{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-left: 3rem;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 20px solid green;
+  }
+  
+  .player3 .green .p{
+      margin: .5rem;
+      border: 1px solid black;
+      border-radius: 500px;
+      width: 30px;
+      height: 30px;
+      background-color: green;
+  }
+  
+  .player3 .bluepathway{
+    position: fixed;
+    top: 158px;
+    left: 238px;
+    transform: rotate(180deg) translateX(-30px) translateY(-30px);
+      display: flex;
+      flex-wrap: wrap;
+      width: 140px;
+      height: 81px;
+  }
+  
+  .player3 .bluepathway .steps {
+      margin: 0;
+     border: 1px solid black;
+     width: 21.3px;
+     height: 25px;
+  }
+  .player3 .e{
+      background-color: green;
+  }
+
+
+
+  .player4{
+    position: fixed;
+    top: 48px;
+    left: 220px;
+    z-index: 0;
+}
+
+
+.player4 .red{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    position: relative;
+    z-index: 0;
+    margin-left: 3rem;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 20px solid red;
+  }
+  
+  .player4 .red .p{
+    position: relative;
+    z-index: 0;
+      margin: .5rem;
+      border: 1px solid black;
+      border-radius: 500px;
+      width: 30px;
+      height: 30px;
+      background-color: red;
+  }
+  
+  .player4 .bluepathway{
+    position: fixed;
+    top: 158px;
+    left: 238px;
+    transform: rotate(90deg) translateX(-80px) translateY(80px);
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 0;
+    width: 140px;
+    height: 81px;
+  }
+  
+  .player4 .bluepathway .steps {
+    position: relative;
+    z-index: 0;
+    margin: 0;
+    border: 1px solid black;
+    width: 21.3px;
+    height: 25px;
+  }
+  .player4 .e{
+    position: relative;
+    z-index: 0;
+    background-color: red;
+  }
+
+  .entry{
+    position: fixed;
+    top: 188px;
+    left: 188px;
+    width: 80px;
+    height: 82px;
+    background-color: white;
+  }
+
+
+.rede{
+    transform: rotate(180deg);
+    border-bottom: 30px solid red;
+    border-top: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+
+.greene{
+    transform: rotate(270deg) translatex(85px) translateY(15px);
+    border-bottom: 30px solid green;
+    border-top: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+
+.yellowe{
+    transform: rotate(0deg) translatex(0px) translateY(-18px);
+    border-bottom: 30px solid rgb(255, 230, 0);
+    border-top: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+
+.bluee{
+    transform: rotate(90deg) translatex(-135px) translateY(15px);
+    border-bottom: 30px solid rgb(40, 194, 255);
+    border-top: 20px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+}
+
+.bluemove1{
+    position: fixed;
+    transform: translatex(8px) translateY(5px);
+    width: 7px;
+    height: 15px;
+    border-radius: 7px;
+    border: 2px solid black;
+    background-color: rgb(64, 198, 252);
+    transition: .3s all ease-in-out;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.bluemove2{
+    position: fixed;
+    transform: translatex(8px) translateY(5px);
+    width: 7px;
+    height: 15px;
+    border-radius: 7px;
+    border: 2px solid black;
+    background-color: rgb(82, 206, 255);
+    transition: .3s all ease-in-out;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.bluemove3{
+    transform: translatex(8px) translateY(5px);
+    width: 7px;
+    height: 15px;
+    border-radius: 7px;
+    border: 2px solid black;
+    background-color: rgb(12, 118, 160);
+    opacity: 0;
+}
+
+.bluemove4{
+    transform: translatex(8px) translateY(5px);
+    width: 7px;
+    height: 15px;
+    border-radius: 7px;
+    border: 2px solid black;
+    background-color: rgb(12, 118, 160);
+    opacity: 0;
+}
+
+
+
+.yellowmove1{
+    transform: translatex(8px) translateY(5px);
+    box-shadow: 5px 5px 5px rgb(255, 230, 0);
+    width: 7px;
+    height: 15px;
+    border-radius: 7px;
+    border: 2px solid black;
+    background-color: rgb(201, 182, 18);
+    opacity: 0;
+}
+
+.yellowmove2{
+    transform: translatex(8px) translateY(5px);
+    box-shadow: 5px 5px 5px rgb(255, 230, 0);
+    width: 7px;
+    height: 15px;
+    border-radius: 7px;
+    border: 2px solid black;
+    background-color: rgb(201, 182, 18);
+    opacity: 0;
+}
+
+.yellowmove3{
+    transform: translatex(8px) translateY(5px);
+    box-shadow: 5px 5px 5px rgb(255, 230, 0);
+    width: 7px;
+    height: 15px;
+    border-radius: 7px;
+    border: 2px solid black;
+    background-color: rgb(201, 182, 18);
+    opacity: 0;
+}
+
+.yellowmove4{
+    transform: translatex(8px) translateY(5px);
+    box-shadow: 5px 5px 5px rgb(255, 230, 0);
+    width: 7px;
+    height: 15px;
+    border-radius: 7px;
+    border: 2px solid black;
+    background-color: rgb(201, 182, 18);
+    opacity: 0;
+}
+
+.greenmove1{
+    position: fixed;
+    transform: translatex(8px) translateY(5px);
+    width: 7px;
+    height: 15px;
+    border-radius: 7px;
+    border: 2px solid black;
+    background-color: rgb(6, 99, 6);
+    z-index: 10;
+    transition: .3s  all ease-in-out;
+    cursor: pointer;
+}
+
+.greenmove2{
+    position: fixed;
+    transform: translatex(8px) translateY(5px);
+    width: 7px;
+    height: 15px;
+    border-radius: 7px;
+    border: 2px solid black;
+    background-color: rgb(6, 99, 6);
+    z-index: 10;
+    transition: .3s  all ease-in-out;
+    cursor: pointer;
+}
+
+.greenmove3{
+    transform: translatex(8px) translateY(5px);
+    box-shadow: 5px 5px 5px green;
+    width: 7px;
+    height: 15px;
+    border-radius: 7px;
+    border: 2px solid black;
+    background-color: rgb(6, 99, 6);
+    opacity: 0;
+}
+
+.greenmove4{
+    transform: translatex(8px) translateY(5px);
+    box-shadow: 5px 5px 5px green;
+    width: 7px;
+    height: 15px;
+    border-radius: 7px;
+    border: 2px solid black;
+    background-color: rgb(6, 99, 6);
+    opacity: 0;
+}
+
+
+.redmove1{
+    transform: translatex(8px) translateY(5px);
+    box-shadow: 5px 5px 5px red;
+    width: 7px;
+    height: 15px;
+    border-radius: 7px;
+    border: 2px solid black;
+    background-color: rgb(175, 14, 14);
+    opacity: 0;
+}
+
+.redmove2{
+    transform: translatex(8px) translateY(5px);
+    box-shadow: 5px 5px 5px red;
+    width: 7px;
+    height: 15px;
+    border-radius: 7px;
+    border: 2px solid black;
+    background-color: rgb(175, 14, 14);
+    opacity: 0;
+}
+
+.redmove3{
+    transform: translatex(8px) translateY(5px);
+    box-shadow: 5px 5px 5px red;
+    width: 7px;
+    height: 15px;
+    border-radius: 7px;
+    border: 2px solid black;
+    background-color: rgb(175, 14, 14);
+    opacity: 0;
+}
+
+.redmove4{
+    transform: translatex(8px) translateY(5px);
+    box-shadow: 5px 5px 5px red;
+    width: 7px;
+    height: 15px;
+    border-radius: 7px;
+    border: 2px solid black;
+    background-color: rgb(175, 14, 14);
+    opacity: 0;
+}
+
+
+#bluedice{
+    position: fixed;
+    top: -47px;
+    border-radius: 10px;
+    border: 4px solid skyblue;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    margin: 3rem;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: 1s;
+    cursor: pointer;
+}
+
+#greendice{
+    position: fixed;
+    top: 360px;
+    left: 310px;
+    border-radius: 10px;
+    border: 4px solid green;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    margin: 3rem;
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    transition: 1s;
+    cursor: pointer;
+}
+.s15{
+    background-color: rgb(172, 172, 172);
+}
+
+
+@keyframes glow {
+    from {
+      box-shadow: 0 0 10px -10px #00ff04;
+    }
+    to {
+      box-shadow: 0 0 10px 10px #00ff04;
+    }
+  }
+
+  @keyframes no {
+    from {
+      box-shadow: 0;
+    }
+    to {
+      box-shadow: 0;
+    }
+  }
