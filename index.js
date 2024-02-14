@@ -276,6 +276,12 @@ function handleGreen(){
         greendice.style.transform='scale(1)';
         bluedice.style.transform='scale(0)';
     }
+    if(bug52 && greenno==31){
+        gp2f();
+    }
+    if(bug52s && greenno2==31){
+        gp1f();
+    }
 }
 
 gp1.addEventListener('click',gp1f)
