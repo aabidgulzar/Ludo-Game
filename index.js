@@ -15,9 +15,6 @@ let bst2 = 0;
 let savemove = 0;
 bluedice.addEventListener('click', handleBlue)
 function handleBlue(){
-    let rec = document.getElementById('recc');
-    rec.style.transform='scale(0)';
-    
     bp1.style.animation= 'glow 1s infinite alternate';
     bp2.style.animation= 'glow 1s infinite alternate';
     gp1.style.animation= 'no';
