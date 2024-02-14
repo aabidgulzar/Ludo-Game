@@ -413,7 +413,7 @@ function handleOverlapping(){
 
 if(greenno!=1 && greenno!=48 && greenno!=14 && greenno!=9 && greenno!=27 && greenno!=22 && greenno!=40 && greenno!=35){
     if(blueno==greenno && blueattack==1){
-        if(bug52!=0 && greenno<26){
+        if(bug52!=0 || greenno<26){
         greenno=0;
         st2=0;
         bug52=0;
@@ -427,7 +427,7 @@ if(greenno!=1 && greenno!=48 && greenno!=14 && greenno!=9 && greenno!=27 && gree
 
 if(greenno2!=1 && greenno2!=48 && greenno2!=14 && greenno2!=9 && greenno2!=27 && greenno2!=22 && greenno2!=40 && greenno2!=35){
     if(blueno==greenno2 && blueattack==1){
-        if(bug52s!=0 && greenno2<26){
+        if(bug52s!=0 || greenno2<26){
         greenno2=0;
         gst2=0;
         bug52s=0;
@@ -441,7 +441,7 @@ if(greenno2!=1 && greenno2!=48 && greenno2!=14 && greenno2!=9 && greenno2!=27 &&
 
 if(greenno!=1 && greenno!=48 && greenno!=14 && greenno!=9 && greenno!=27 && greenno!=22 && greenno!=40 && greenno!=35){
     if(blueno2==greenno && blueattack==1){
-        if(bug52!=0 && greenno<26){
+        if(bug52!=0 || greenno<26){
         greenno=0;
         st2=0;
         bug52=0;
@@ -455,7 +455,7 @@ if(greenno!=1 && greenno!=48 && greenno!=14 && greenno!=9 && greenno!=27 && gree
 
 if(greenno2!=1 && greenno2!=48 && greenno2!=14 && greenno2!=9 && greenno2!=27 && greenno2!=22 && greenno2!=40 && greenno2!=35){
     if(blueno2==greenno2 && blueattack==1){
-        if(bug52s!=0 && greenno2<26){
+        if(bug52s!=0 || greenno2<26){
         greenno2=0;
         gst2=0;
         bug52s=0;
@@ -473,7 +473,7 @@ if(greenno2!=1 && greenno2!=48 && greenno2!=14 && greenno2!=9 && greenno2!=27 &&
 function handleOverlappingb(){
 if(blueno!=1 && blueno!=48 && blueno!=14 && blueno!=9 && blueno!=27 && blueno!=22 && blueno!=40 && blueno!=35){
     if(greenno==blueno && greenattack==1){
-        if(bug52==0 && greenno<26){
+        if(bug52==0 || greenno<26){
         blueno=0;
         st=0;
         targetElement = document.getElementById('stb1');
@@ -486,7 +486,7 @@ if(blueno!=1 && blueno!=48 && blueno!=14 && blueno!=9 && blueno!=27 && blueno!=2
 
 if(blueno2!=1 && blueno2!=48 && blueno2!=14 && blueno2!=9 && blueno2!=27 && blueno2!=22 && blueno2!=40 && blueno2!=35){
     if(greenno==blueno2 && greenattack==1){
-        if(bug52==0  && greenno<26){
+        if(bug52==0 || greenno<26){
         blueno2=0;
         bst2=0;
         targetElement = document.getElementById('stb2');
@@ -498,7 +498,7 @@ if(blueno2!=1 && blueno2!=48 && blueno2!=14 && blueno2!=9 && blueno2!=27 && blue
 }
 if(blueno!=1 && blueno!=48 && blueno!=14 && blueno!=9 && blueno!=27 && blueno!=22 && blueno!=40 && blueno!=35){
     if(greenno2==blueno && greenattack==1){
-        if(bug52s==0  && greenno2<26){
+        if(bug52s==0 || greenno2<26){
         blueno=0;
         st=0;
         targetElement = document.getElementById('stb1');
@@ -511,7 +511,7 @@ if(blueno!=1 && blueno!=48 && blueno!=14 && blueno!=9 && blueno!=27 && blueno!=2
 
 if(blueno2!=1 && blueno2!=48 && blueno2!=14 && blueno2!=9 && blueno2!=27 && blueno2!=22 && blueno2!=40 && blueno2!=35){
     if(greenno2==blueno2 && greenattack==1){
-        if(bug52s==0  && greenno2<26){
+        if(bug52s==0 || greenno2<26){
         blueno2=0;
         bst2=0;
         targetElement = document.getElementById('stb2');
